@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController">
+            <connections>
+                <outlet property="fastSpeed" destination="MFg-5Z-9Q1" id="ceK-Ds-Zsd"/>
+                <outlet property="normalSpeed" destination="KaQ-0Y-9CJ" id="TX3-L7-NUy"/>
+                <outlet property="playerView" destination="Vpb-sE-XDm" id="Kjo-45-YvH"/>
+                <outlet property="previewImageView" destination="ULL-vB-kLw" id="kR2-4Z-5Td"/>
+                <outlet property="slowSpeed" destination="nA3-c5-Uom" id="9Y7-BQ-RVp"/>
+                <outlet property="toolbar" destination="RZL-Zs-wVM" id="20u-wD-vJ0"/>
+                <outlet property="toolbarSpace" destination="T7T-CN-Km2" id="DoY-YI-qnV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpb-sE-XDm" customClass="PlayerView">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ULL-vB-kLw">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZL-Zs-wVM">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="15l-fc-Dru"/>
+                        <constraint firstAttribute="height" constant="44" id="xhA-WN-JEq"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Slow" id="nA3-c5-Uom"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="4tt-l5-KRC"/>
+                        <barButtonItem title="Normal" id="KaQ-0Y-9CJ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xmI-kn-CmV"/>
+                        <barButtonItem title="Fast" id="MFg-5Z-9Q1"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="T7T-CN-Km2"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ULL-vB-kLw" secondAttribute="trailing" id="0dh-L6-Fp9"/>
+                <constraint firstAttribute="bottom" secondItem="RZL-Zs-wVM" secondAttribute="bottom" id="2sU-fV-2q9"/>
+                <constraint firstItem="RZL-Zs-wVM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3ee-cx-wea"/>
+                <constraint firstItem="ULL-vB-kLw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="5AR-3k-4Nn"/>
+                <constraint firstItem="Vpb-sE-XDm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Iz-Pu-mAX"/>
+                <constraint firstItem="Vpb-sE-XDm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Bfd-Ma-6it"/>
+                <constraint firstAttribute="bottom" secondItem="ULL-vB-kLw" secondAttribute="bottom" id="Bj8-mP-v8t"/>
+                <constraint firstAttribute="bottom" secondItem="Vpb-sE-XDm" secondAttribute="bottom" id="UzE-99-Z15"/>
+                <constraint firstAttribute="trailing" secondItem="Vpb-sE-XDm" secondAttribute="trailing" id="plQ-y8-rjd"/>
+                <constraint firstAttribute="trailing" secondItem="RZL-Zs-wVM" secondAttribute="trailing" id="qrd-Vh-c1s"/>
+                <constraint firstItem="ULL-vB-kLw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qwL-x9-YrA"/>
+            </constraints>
+            <point key="canvasLocation" x="345" y="258"/>
+        </view>
+    </objects>
+</document>

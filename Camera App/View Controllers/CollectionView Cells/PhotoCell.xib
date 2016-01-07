@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="gTV-IL-0wX" customClass="PhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uol-B8-N4E">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-t5-20h">
+                        <rect key="frame" x="59" y="60" width="14" height="14"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="0Pk-t5-20h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="60" id="7rc-qW-b1i"/>
+                <constraint firstItem="Uol-B8-N4E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8PW-ui-37s"/>
+                <constraint firstAttribute="trailing" secondItem="0Pk-t5-20h" secondAttribute="trailing" constant="7" id="DMX-CD-6xy"/>
+                <constraint firstItem="Uol-B8-N4E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QXZ-dK-tzL"/>
+                <constraint firstItem="0Pk-t5-20h" firstAttribute="top" secondItem="Uol-B8-N4E" secondAttribute="bottom" constant="-23" id="XGs-Ro-pH8"/>
+                <constraint firstItem="0Pk-t5-20h" firstAttribute="leading" secondItem="Uol-B8-N4E" secondAttribute="trailing" constant="-23" id="dqe-I8-Onu"/>
+                <constraint firstItem="0Pk-t5-20h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="59" id="jWw-Ey-RH1"/>
+                <constraint firstAttribute="bottom" secondItem="Uol-B8-N4E" secondAttribute="bottom" id="sXc-Dq-j1o"/>
+                <constraint firstAttribute="trailing" secondItem="Uol-B8-N4E" secondAttribute="trailing" id="t2p-xa-4pQ"/>
+                <constraint firstAttribute="bottom" secondItem="0Pk-t5-20h" secondAttribute="bottom" constant="6" id="xVR-6D-M8O"/>
+            </constraints>
+            <size key="customSize" width="170" height="170"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XGs-Ro-pH8"/>
+                    <exclude reference="dqe-I8-Onu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="photoImageView" destination="Uol-B8-N4E" id="7Hi-xs-v4U"/>
+            </connections>
+            <point key="canvasLocation" x="948" y="284"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera_icon" width="38" height="33"/>
+    </resources>
+</document>

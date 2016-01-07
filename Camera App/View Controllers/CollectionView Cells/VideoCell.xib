@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videoCell" id="gTV-IL-0wX" customClass="VideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLp-Rs-9aP">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-RA-SOu">
+                        <rect key="frame" x="58" y="61" width="15" height="15"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="HzO-RA-SOu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="61" id="3fD-LE-Leo"/>
+                <constraint firstAttribute="trailing" secondItem="HzO-RA-SOu" secondAttribute="trailing" constant="7" id="Kms-Sv-Fgj"/>
+                <constraint firstItem="HzO-RA-SOu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="48" id="PDi-0G-mMP"/>
+                <constraint firstItem="HzO-RA-SOu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="58" id="WCx-sC-IJk"/>
+                <constraint firstAttribute="bottom" secondItem="HzO-RA-SOu" secondAttribute="bottom" constant="8" id="fGy-Mr-hQP"/>
+                <constraint firstAttribute="trailing" secondItem="HzO-RA-SOu" secondAttribute="trailing" constant="8" id="pem-HV-kdc"/>
+                <constraint firstAttribute="bottom" secondItem="HzO-RA-SOu" secondAttribute="bottom" constant="4" id="q5E-7J-8Nq"/>
+                <constraint firstItem="HzO-RA-SOu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="50" id="tdT-do-q7T"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PDi-0G-mMP"/>
+                    <exclude reference="fGy-Mr-hQP"/>
+                    <exclude reference="pem-HV-kdc"/>
+                    <exclude reference="tdT-do-q7T"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="videoImageView" destination="CLp-Rs-9aP" id="2Sa-ZT-Rag"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="217"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video_icon" width="49" height="28"/>
+    </resources>
+</document>
